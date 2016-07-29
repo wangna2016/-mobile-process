@@ -34,8 +34,8 @@ var swipe1=new Swiper(".swiper-container",{
         shadowOffset: 100,
         shadowScale: 0.6
     },
-    prevButton:'.swiper-button-prev',
-    nextButton:'.swiper-button-next',
+  /*  prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',*/
 
     loop:true,//无缝轮播
     onSlideChangeEnd:function(swipe){
@@ -46,7 +46,7 @@ var swipe1=new Swiper(".swiper-container",{
         [].forEach.call(slideAry,function(item,index){
             if(index==n){
                 if(item.id=index==0){
-                    item.id="page"+slideAry.length-2;
+                    item.id="page"+(slideAry.length-2);
                 }else if(item.id=index==slideAry.length-1){
                     item.id="page1"
 
@@ -54,10 +54,10 @@ var swipe1=new Swiper(".swiper-container",{
                     item.id="page"+index;
 
                 }
-                console.log(item.id);
+                item.id = null;
                 return;
             }
-            item.id = null;
+            
         })
     }
 });
