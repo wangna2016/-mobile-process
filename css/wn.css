@@ -111,7 +111,7 @@ html{
 
 }
 .page1 div:nth-child(3){
-    top:6.3rem;
+    top:6rem;
     right: 1rem;
     border-right:1.2rem solid lightpink ;
     border-left:1.2rem solid transparent ;
@@ -280,17 +280,17 @@ html{
 }
 .page4 div:nth-child(2){
     top: 2rem;
-    left: 1.5rem;
+    left: 2.5rem;
 
 }
 .page4 div:nth-child(3){
-    top: 4.5rem;
-    left: 2rem;
+    top: 4rem;
+    left: 1rem;
 
 }
 .page4 div:nth-child(4){
     top: 6rem;
-    left: 3rem;
+    left: 2.5rem;
 
 }
 
