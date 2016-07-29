@@ -23,14 +23,9 @@ var swipe1=new Swiper(".swiper-container",{
         shadowOffset: 100,
         shadowScale: 0.6
     },
-<<<<<<< HEAD
     prevButton:'.swiper-button-prev',
     nextButton:'.swiper-button-next',*/
     direction: "vertical",
-=======
-  /*  prevButton:'.swiper-button-prev',
-    nextButton:'.swiper-button-next',*/
->>>>>>> fef61929c298e3b6a8442153f91090783377f354
 
     loop:true,
     onSlideChangeEnd:function(swipe){
@@ -41,16 +36,10 @@ var swipe1=new Swiper(".swiper-container",{
         [].forEach.call(slideAry,function(item,index){
             console.log(slideAry.length,index);
             if(index==n){
-<<<<<<< HEAD
                 if(index==0){
                     item.id="page"+(slideAry.length-2);
                 }else if(index==slideAry.length-1){
 
-=======
-                if(item.id=index==0){
-                    item.id="page"+(slideAry.length-2);
-                }else if(item.id=index==slideAry.length-1){
->>>>>>> fef61929c298e3b6a8442153f91090783377f354
                     item.id="page1"
 
                 }else{
@@ -58,10 +47,10 @@ var swipe1=new Swiper(".swiper-container",{
                     console.log(item.id)
 
                 }
-                item.id = null;
+                console.log(item.id);
                 return;
             }
-            
+            item.id = null;
         })
     }
 });
