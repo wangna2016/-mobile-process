@@ -8,8 +8,6 @@ FastClick.attach(document.body);
         oMain.style.margin="0 auto";
         oMain.style.width=desW+"px";
         musicBox.style.width=desW+"px";
-
-
         return;
 
     }
@@ -17,41 +15,47 @@ FastClick.attach(document.body);
 
 }(640);
 var swipe1=new Swiper(".swiper-container",{
-    /*effect:"coverflow",
-    slidesPerView: 1,
-    centeredSlides: true,
-    coverflow: {
-        rotate: 30,
-        stretch: 10,
-        depth: 60,
-        modifier: 2,
-        slideShadows : true
-    },*/
-    effect : 'cube',
+
+  /*  effect : 'cube',
     cube: {
         slideShadows: true,
         shadow: true,
         shadowOffset: 100,
         shadowScale: 0.6
     },
+<<<<<<< HEAD
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',*/
+    direction: "vertical",
+=======
   /*  prevButton:'.swiper-button-prev',
     nextButton:'.swiper-button-next',*/
+>>>>>>> fef61929c298e3b6a8442153f91090783377f354
 
-    loop:true,//无缝轮播
+    loop:true,
     onSlideChangeEnd:function(swipe){
         var n=swipe.activeIndex,
             slideAry=swipe.slides;
-
+        console.log(n);
 
         [].forEach.call(slideAry,function(item,index){
+            console.log(slideAry.length,index);
             if(index==n){
+<<<<<<< HEAD
+                if(index==0){
+                    item.id="page"+(slideAry.length-2);
+                }else if(index==slideAry.length-1){
+
+=======
                 if(item.id=index==0){
                     item.id="page"+(slideAry.length-2);
                 }else if(item.id=index==slideAry.length-1){
+>>>>>>> fef61929c298e3b6a8442153f91090783377f354
                     item.id="page1"
 
                 }else{
                     item.id="page"+index;
+                    console.log(item.id)
 
                 }
                 item.id = null;
