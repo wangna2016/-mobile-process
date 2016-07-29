@@ -111,7 +111,7 @@ html{
 
 }
 .page1 div:nth-child(3){
-    top:6rem;
+    top:5.8rem;
     right: 1rem;
     border-right:1.2rem solid lightpink ;
     border-left:1.2rem solid transparent ;
